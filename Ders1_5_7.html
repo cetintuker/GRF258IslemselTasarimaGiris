@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Processing.js Circle Example</title>
+    <script src="https://cdn.jsdelivr.net/gh/processing-js/processing-js@1.6.6/processing.min.js"></script>
+  </head>
+  <body>
+    <canvas id="mycanvas"></canvas>
+    <script type="application/processing" data-processing-target="mycanvas">
+void setup() {
+  size(400, 400);
+}
+
+void draw() {
+  background(255); // Her seferinde arkaplanı beyaza temizle
+  fill(255, 0, 0);
+  ellipse(mouseX, mouseY, 50, 50); // Fare ile hareket eden kırmızı elips
+}
+
+    </script>
+  </body>
+</html>
