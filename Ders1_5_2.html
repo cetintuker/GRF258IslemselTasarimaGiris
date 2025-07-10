@@ -8,13 +8,13 @@
   <body>
     <canvas id="mycanvas"></canvas>
     <script type="application/processing" data-processing-target="mycanvas">
- void setup() {
+      void setup() {
   size(400, 400);
-  background(255,125,125);
+  background(255);
 }
 
 void draw() {
-  ellipse(200, 200, 100, 50); // Merkez 200,200, genişlik 100, yükseklik 50
+  line(50, 50, 350, 350); // Köşegen biçiminde çizgi
 }
 
     </script>

@@ -8,14 +8,17 @@
   <body>
     <canvas id="mycanvas"></canvas>
     <script type="application/processing" data-processing-target="mycanvas">
-void setup() {
+ void setup() {
   size(400, 400);
+  background(255);
 }
 
 void draw() {
-  background(255); // Her seferinde arkaplanı beyaza temizle
-  fill(255, 0, 0);
-  ellipse(mouseX, mouseY, 50, 50); // Fare ile hareket eden kırmızı elips
+  fill(255, 0, 0);    // Kırmızı iç renk
+  ellipse(100, 100, 50, 50);
+
+  fill(0, 255, 0);    // Yeşil iç renk
+  rect(150, 150, 80, 50);
 }
 
     </script>
